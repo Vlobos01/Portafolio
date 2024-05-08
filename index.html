@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portafolio</title>
+        <link rel="Stylesheet" href="estilo.css"> 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHLRQPTGPH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XHLRQPTGPH');
+        </script>
+    </head>
+    <body>
+        <!--MENU ENCABEZADO-->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Vlobos</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!--SECCION INICIO-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/hero.png" alt="">
+                </div>
+                <h1>AGUSTIN VERGA LOBOS</h1>
+                <h2>Analista en Sistemas - junior</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/agustin.vergalobos/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/VLobosAgus"></i><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/vlobos01/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Vlobos01"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/agustin-verga-lobos-951a26267/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION SOBRE MI-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mi</h2>
+                <p><span>Hola, Soy Agustin Verga Lobos.</span> Disfruto creando aplicaciones que ofrecen experiencias intuitivas y funcionales para los usuarios, centrándome en la creación de soluciones móviles elegantes y útiles que satisfacen las necesidades del usuario final. Mi experiencia como analista en sistemas me permite comprender a fondo los requisitos del proyecto y traducirlos en soluciones tecnológicas efectivas y eficientes. Estoy comprometido a seguir aprendiendo y creciendo en este emocionante campo de la tecnología, donde cada desafío es una oportunidad para innovar y marcar la diferencia.</p>
+
+                    <div class="fila">
+                        <!--Datos Personales-->
+                        <div class="col">
+                            <h3>Datos Peronales</h3>
+                            <ul>
+                                <li>
+                                    <strong>Cumpleaños</strong>
+                                    21-05-2002
+                                </li>
+                                <li>
+                                    <strong>Telefono</strong>
+                                    2983-344657
+                                </li>
+                                <li>
+                                    <strong>Localidad</strong>
+                                    Buenos aires, Argentina
+                                </li>
+                                <li>
+                                    <strong>Cargo</strong>
+                                    <span>FREELANCE</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--intereses-->
+                        <div class="col">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
+                                <div class="interes">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>JUEGOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <span>MUSICA</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-plane"></i>
+                                    <span>VIAJAR</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-brands fa-android"></i>
+                                    <span>ANDROID</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-futbol"></i>
+                                    <span>DEPORTE</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>LIBROS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-car"></i>
+                                    <span>AUTOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span>FOTOS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="Cv.pdf" download="Agustin" style="text-decoration: none; color: inherit;">
+                        <button>
+                             Descargar CV <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                  </a>
+            </div>
+        </section>
+
+        <!--SECCION SKILLS-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila" style=" margin-top: 20px; margin-bottom: 20px;">
+                    <!--code Skill-->
+                    <div class="col">
+                        <h3>Code Skills</h3>
+                        <div class="skill">
+                            <span>Java</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>C#</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Php</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Professional Skills-->
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <!--DataBase Skill-->
+                    <div class="col">
+                        <h3>DataBase Skills</h3>
+                        <div class="skill">
+                            <span>SQLServer</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>My Sql</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>FireBase</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>SQlite</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Desing Skills-->
+                    <div class="col">
+                        <h3>Desing Skills</h3>
+                        <div class="skill">
+                            <span>Figma</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Canvas</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Sketch</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION CURRICULUM-->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educacion</h3>
+                        <div class="item izq">
+                            <h4>Analista Programador</h4>
+                            <span class="casa">Instituto Superior Santo Domingo</span>
+                            <span class="fecha">2021 - 2022</span>
+                            <p>Combina habilidades de análisis de sistemas con habilidades de programación. 
+                                Este rol implica comprender las necesidades del cliente o usuario final y 
+                                traducirlas en especificaciones técnicas claras para el desarrollo de software. 
+                                Los analistas programadores suelen participar en todas las etapas del ciclo de vida del 
+                                desarrollo de software, desde la concepción y el diseño hasta la implementación y el mantenimiento.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Tecnico Superior en Analista en Sistemas</h4>
+                            <span class="casa">Instituto Superior Santo Domingo</span>
+                            <span class="fecha">2021 - 2024</span>
+                            <p>Su principal función es comprender las necesidades de los usuarios o clientes y 
+                                traducirlas en requisitos técnicos para el desarrollo de software o sistemas informáticos. 
+                                Los analistas en sistemas trabajan en estrecha colaboración con otros profesionales, como programadores, 
+                                diseñadores de bases de datos y especialistas en redes, para crear soluciones tecnológicas efectivas que 
+                                satisfagan las necesidades del negocio o la organización.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3>Aptitudes</h3>
+                        <div class="item der">
+                            <h4>Analista Funcional</h4>
+                            <span class="casa">Documentación de Requisitos</span>
+                            <span class="fecha"></span>
+                            <p>mi objetivo es asegurarme de que las soluciones tecnológicas propuestas 
+                                satisfagan las necesidades del negocio y proporcionen valor a los usuarios finales. 
+                                Esto implica trabajar estrechamente con todas las partes interesadas para comprender sus 
+                                requerimientos y garantizar que se traduzcan de manera efectiva en soluciones técnicas 
+                                viables.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Front-End</h4>
+                            <span class="casa">HTML CSS Javascript</span>
+                            <span class="fecha"></span>
+                            <p>El desarrollo front-end se refiere a la creación y diseño de la parte de una 
+                                aplicación web con la que interactúan los usuarios directamente. Esto incluye 
+                                la estructura, el diseño y la funcionalidad de la interfaz de usuario, así como 
+                                la experiencia del usuario en general.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Desarrollador de aplicaciones móviles</h4>
+                            <span class="casa">Android Studio</span>
+                            <span class="fecha"></span>
+                            <p>Mi enfoque principal es diseñar, 
+                                desarrollar y mantener aplicaciones para dispositivos móviles, como teléfonos 
+                                inteligentes y tabletas.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                        </div>
+                        <div class="item der">
+                            <h4>QA Tester</h4>
+                            <span class="casa">Zephyr</span>
+                            <span class="fecha"></span>
+                            <p>También conocido como analista de control de calidad o tester de calidad, 
+                                es encargado de asegurar la calidad de software mediante 
+                                la identificación y corrección de errores o defectos antes de que una aplicación se 
+                                lance al público.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION PORTAFOLIO-->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTAFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/p1.png" alt="">
+                        <div class="overlay">
+                            <h3>Android Studio & SQlite</h3>
+                            <p>Compra y venta de productos</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p2.png" alt="">
+                        <div class="overlay">
+                            <h3>Flutter & Firebase</h3>
+                            <p>Compra y venta de productos agroquimicos</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p3.png" alt="">
+                        <div class="overlay">
+                            <h3>HTML+CSS+Javascript</h3>
+                            <p>Diseño Web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p4.png" alt="">
+                        <div class="overlay">
+                            <h3>Android Studio & Firebase</h3>
+                            <p>(En proceso)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--SECCION CONTACTO-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                     <!--Formulario-->
+                    <div class="col">
+                        <form action="https://formsubmit.co/agusvergalobos2016@gmail.com" method="POST">
+                            <input type="text" name="nombre" placeholder="Tu Nombre" require>
+                            <input type="tel" name="telefono" placeholder="Numero telefonico" require>
+                            <input type="email" name="correo" placeholder="Direccion de correo" require>
+                            <input type="text" name="tema" placeholder="Tema" require>
+                            <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" require></textarea>
+                            <button type="submit">
+                                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <!--Mapa-->
+                    <div class="col">
+                        <img src="img/ubicacion.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Larrea 1255, Tres Arroyos
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamanos: 2983-344657
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: agusvergalobos2016@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/agustin.vergalobos/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/VLobosAgus"></i><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/vlobos01/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Vlobos01"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/agustin-verga-lobos-951a26267/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
